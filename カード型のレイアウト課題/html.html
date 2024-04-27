@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      body,ul,p,h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+      
+      /* ===============
+ 　　　PC用のスタイル
+　　　 =================*/
+      @media screen and (min-width: 768px) {
+      body {
+        max-width: 1100px;
+      }
+      ul {
+        padding: 0 24px;
+      }  
+      img{
+       width: 100%;
+       height: auto;
+      }
+      h2 {
+        text-align: center;
+        padding: 24px 0;
+      }
+      #apple_card_list {
+        background-color: aquamarine;
+      }
+      .apple_card_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+      .apple_card_list-item {
+        list-style: none;
+        width: calc((100% - 72px)/ 4);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2)
+      }
+      .apple {
+        border-radius: 16px 16px 0 0;
+      }
+      .apple_card_list li:nth-of-type(2n) {
+        background-color: #8b8b6f;
+      }
+      .apple_card_list li:nth-of-type(2n+1) {
+        background-color: #f3ecd8;
+      }
+
+      #banana_card_list {
+        background-color: yellow;
+      }
+      .banana_card_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding-bottom: 24px;
+      }
+      .banana_card_list-item {
+        list-style: none;
+        width: calc((100% - 48px)/ 3);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2)
+      }
+      .banana {
+        border-radius: 16px 16px 0 0;
+      }
+      .banana_card_list li:nth-of-type(2n) {
+        background-color: #8b8b6f;
+      }
+      .banana_card_list li:nth-of-type(2n+1) {
+        background-color: #f3ecd8;
+      }
+      #banana_card_list {
+        margin-top: 24px;
+      }
+      .text {
+        padding: 8px 16px 8px 16px;
+      }
+      }
+
+      /* ====================
+  　　スマートフォン用のスタイル
+  　　======================*/
+      @media screen and (max-width: 768px) {  
+        body {
+        min-width: 375px;
+        margin: 0;
+        }
+        
+        img{
+        width: 100%;
+        height: auto;
+        }
+        h2 {
+        text-align: center;
+        padding: 24px 0;
+        }
+        #apple_card_list {
+        background-color: aquamarine;
+        }
+        .apple_card_list {
+        display: block;
+        padding-bottom: 2px;
+        }
+        .apple_card_list-item {
+        margin: 24px;
+        list-style: none;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2) 
+        }
+        .apple {
+        border-radius: 16px 16px 0 0;
+        }
+        .apple_card_list li:nth-of-type(2n) {
+        background-color: #8b8b6f;
+        }
+        .apple_card_list li:nth-of-type(2n+1) {
+        background-color: #f3ecd8;
+        }
+
+        #banana_card_list {
+        background-color: yellow;
+        }
+        .banana_card_list {
+        display: block;
+        padding-bottom: 2px;
+        }
+        .banana_card_list-item {
+        margin: 24px;
+        list-style: none;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2)
+        }
+        .banana {
+        border-radius: 16px 16px 0 0;
+        }
+        .banana_card_list li:nth-of-type(2n) {
+        background-color: #8b8b6f;
+        }
+        .banana_card_list li:nth-of-type(2n+1) {
+        background-color: #f3ecd8;
+        }
+        .text {
+        padding: 8px 16px 8px 16px;
+        }
+      
+        }
+      
+  </style>
+</head>
+<body>
+  <article>
+    <!-- りんごのカードリスト -->
+     <section id="apple_card_list">
+       <h2>りんごのカードリスト</h2>
+         <ul class="apple_card_list">
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="apple_card_list-item">
+            <img src="img/apple.jpg" class="apple" alt="りんごの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+         </ul>
+     </section>
+
+    <!-- バナナのカードリスト -->
+    <section id="banana_card_list">
+       <h2>バナナのカードリスト</h2>
+         <ul class="banana_card_list">
+           <li class="banana_card_list-item">
+             <img src="img/banana.jpg" class="banana" alt="バナナの画像">
+             <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+           </li>
+           <li class="banana_card_list-item">
+            <img src="img/banana.jpg" class="banana alt="バナナの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="banana_card_list-item">
+            <img src="img/banana.jpg" class="banana alt="バナナの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="banana_card_list-item">
+            <img src="img/banana.jpg" class="banana alt="バナナの画像">
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+         </ul>
+    </section>
+  </article>
+</body>
+</html>
